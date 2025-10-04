@@ -1,0 +1,24 @@
+{
+  "name": "iwagd-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasJardim2004/IWAGD_Exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasJardim2004/IWAGD_Exercises/issues"
+  },
+  "homepage": "https://github.com/LucasJardim2004/IWAGD_Exercises#readme",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
