@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Freddie Mercury",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Freddie_Mercury_1977.jpg",
+    "instrumentosestilos": "Voz, Piano, Rock",
+    "descricao": "Vocalista e pianista da banda Queen, conhecido pela sua poderosa voz e performances icónicas."
+  },
+  {
+    "nome": "Jimi Hendrix",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Jimi_Hendrix_1967.png",
+    "instrumentosestilos": "Guitarra, Rock Psicodélico, Blues",
+    "descricao": "Guitarrista e cantor americano, considerado um dos maiores inovadores da guitarra elétrica."
+  },
+  {
+    "nome": "Paul McCartney",
+    "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Paul_McCartney_2021.jpg",
+    "instrumentosestilos": "Baixo, Voz, Rock, Pop",
+    "descricao": "Cantor, compositor e multi-instrumentista britânico, membro dos Beatles e um dos músicos mais influentes da história."
+  }
+]
