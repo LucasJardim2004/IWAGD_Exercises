@@ -4,6 +4,7 @@ import Schedule from "./Schedule";
 import Links from "./Links";
 import Contacts from "./Contacts";
 import About from "./About";
+import listMusicians from './listMusicians';
 
 function Main() {
   return (
@@ -13,6 +14,7 @@ function Main() {
         <Schedule />
         <Links />
         <Contacts />
+        <listMusicians />
     </article>
   );
 }
