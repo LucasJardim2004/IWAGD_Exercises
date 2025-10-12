@@ -4,17 +4,17 @@ import Schedule from "./Schedule";
 import Links from "./Links";
 import Contacts from "./Contacts";
 import About from "./About";
-import listMusicians from './listMusicians';
+import ListMusicians from './listMusicians';
 
 function Main() {
   return (
     <article>
-        <About />
-        <Gallery />
-        <Schedule />
-        <Links />
-        <Contacts />
-        <listMusicians />
+      <About />
+      <ListMusicians />
+      <Gallery />
+      <Schedule />
+      <Links />
+      <Contacts />
     </article>
   );
 }

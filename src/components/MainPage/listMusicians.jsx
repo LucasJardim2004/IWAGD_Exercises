@@ -2,7 +2,7 @@ import React from 'react';
 import Musician from '../Musicos/Musicians';
 import musicos from '../../static/musicos.json';
 
-function listMusicians() {
+function ListMusicians() {
   return (
     <div>
       <h1>Os Músicos do Grupo</h1>
@@ -13,10 +13,12 @@ function listMusicians() {
           imagem={m.imagem}
           instrumentosestilos={m.instrumentosestilos}
           descricao={m.descricao}
+          urlvideo={m.urlvideo}
+          dataintegracao={m.dataintegracao}
         />
       ))}
     </div>
   );
 }
 
-export default listMusicians;
+export default ListMusicians;
