@@ -17,7 +17,10 @@ function FormVoluntario() {
 
   // validação de “palavras proibidas” no comentário (exemplo)
   const forbidden = useMemo(
-    () => ["ofensa", "insulto", "spam", "palavrão", "idiota"],
+    () => ["abecula","abentesma","achavascado","alimaria","andrajoso",
+    "barrega","biltre","cacostomo","cuarra","estolido",
+    "estroso","estultiloquio","nefelibata","nescio","pechenga",
+    "sevandija","somitico","tatibitate","xexe","cheche","xexelento"],
     []
   );
 
