@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-function Form() {
-  // estado de submissão (mostra a “página” de confirmação)
+function FormVoluntario() {
+    // estado de submissão (mostra a “página” de confirmação)
   const [submitted, setSubmitted] = useState(false);
 
   // campos
@@ -53,14 +54,38 @@ function Form() {
       .some((w) => forbidden.includes(w));
 
   function handleSubmit(e) {
-    e.preventDefault();
-    if (!canSubmit) {
-      // dá feedback mínimo se tentarem submeter inválido
-      if (!comentarioStatus) validarComentarioAgora();
-      return;
-    }
-    setSubmitted(true);
+  e.preventDefault();
+
+  if (!canSubmit) {
+    if (!comentarioStatus) validarComentarioAgora();
+    return;
   }
+
+  // 🧾 Mostrar no console todos os dados do formulário
+  console.clear();
+  console.log("📋 Dados da candidatura submetida:");
+  console.log("Nome:", nome);
+  console.log("Email:", email);
+  console.log("Telefone:", telefone || "(não indicado)");
+  console.log("Dia:", dia);
+  console.log("Horário:", horario);
+  console.log("Tarefas preferidas:", tarefas || "(não indicado)");
+  console.log("Comentário:", comentario || "(vazio)");
+
+  // Mostra também o JSON completo (muito útil)
+  console.log("JSON completo:", {
+    nome,
+    email,
+    telefone,
+    dia,
+    horario,
+    tarefas,
+    comentario,
+  });
+
+  // depois continua como antes
+  setSubmitted(true);
+}
 
   function handleReset(e) {
     // como os inputs são controlados, limpamos o estado à mão
@@ -284,9 +309,7 @@ function Form() {
     </main>
   );
 }
-
-
-/* estilos inline simples para manter tudo contido no componente */
+  /* estilos inline simples para manter tudo contido no componente */
 const styles = {
   page: {
     minHeight: "100dvh",
@@ -338,4 +361,4 @@ const styles = {
   },
 };
 
-export default Form;
+export default FormVoluntario;

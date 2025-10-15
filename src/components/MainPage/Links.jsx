@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Links() {
+  const navigate = useNavigate();
+
   return (
 <section aria-labelledby="ligacoes-titulo" id="ligacoes">
         <h2 id="ligacoes-titulo">Ligações úteis</h2>
@@ -42,6 +45,13 @@ function Links() {
             </a>
           </li>
         </ul>
+        <button
+          style={{ marginTop: '1rem', color: 'white', backgroundColor: '#007BFF', padding: '0.5rem 1rem', cursor: 'pointer', border: 'none', borderRadius: '4px' }}
+          aria-label="Navegar para o formulário de inscrição"
+          onClick={() => navigate('/inscricao')}
+        >
+          Quero ser voluntário/a
+        </button>
       </section>
   );
 }
