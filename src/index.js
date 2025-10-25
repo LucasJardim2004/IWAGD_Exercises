@@ -4,17 +4,27 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import FormVoluntario from "./FormVoluntario";
+import {SurveyProvider} from "./context/SurveyContext";
+import Survey from "./components/Inqueritos/Survey";
+import SurveyResult from './components/Inqueritos/SurveyResults';
+import SurveyAllResults from './components/Inqueritos/SurveyAllResults';
+
 
 const root = createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+<React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/inscricao" element={<FormVoluntario />} />
-      </Routes>
+        <SurveyProvider>
+            <Routes>
+                <Route path="/" element={<App />} />
+                <Route path="/inscricao" element={<FormVoluntario />} />
+                <Route path="/inquerito" element={<Survey />} />
+                <Route path="/inquerito/resposta" element={<SurveyResult />} />
+                <Route path="/inquerito/resultados" element={<SurveyAllResults />} />
+            </Routes>
+        </SurveyProvider>
     </BrowserRouter>
-  </React.StrictMode>
+</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
